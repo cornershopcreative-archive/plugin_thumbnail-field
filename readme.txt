@@ -68,7 +68,7 @@ No problem. If the field you're interested in isn't one of WordPress's defaults 
 
 = What about multi-fields? =
 
-Mostly this plugin assumes fields will have single, textual values. But you may have a custom field, or be fetching a built-in key such as 'sizes', that isn't. Not to fear! This will happily return a maybe-unserialized array for you if it finds something of that sort. In these cases, using `the_thumbnail_field()` will be pretty useless Ñ you'll want to use `get_thumbnail_field()` to fetch the array and manipulate/echo values within in.
+Mostly this plugin assumes fields will have single, textual values. But you may have a custom field, or be fetching a built-in key such as 'sizes', that isn't. Not to fear! This will happily return a maybe-unserialized array for you if it finds something of that sort. In these cases, using `the_thumbnail_field()` will be pretty useless -- you'll want to use `get_thumbnail_field()` to fetch the array and manipulate/echo values within it.
 
 
 == Changelog ==
