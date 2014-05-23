@@ -3,7 +3,7 @@
 Plugin Name: Thumbnail Field
 Plugin URI: http://cornershopcreative.com/code/thumbnail-field
 Description: Exposes two new functions theme developers can use to retrieve information about a post's featured image, such as the caption or description.
-Version: 1.0.0
+Version: 1.0.1
 Author: drywallbmb
 Author URI: http://cornershopcreative.com
 License: GPLv2 or later
@@ -56,7 +56,7 @@ function get_thumbnail_field( $field = 'caption', $post_id = NULL, $suppress_fil
 /**
  * Echoes the value of a post thumbnail field. May not produce expected output if field value isn't a string.
  *
- * @see get_thumbnail_field() for parameters. Only difference is that this echoes the reult.
+ * @see get_thumbnail_field() for parameters. Only difference is that this echoes the result.
  *
  * @since 1.0.0
  */
