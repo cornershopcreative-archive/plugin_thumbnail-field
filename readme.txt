@@ -7,11 +7,11 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Exposes two new functions theme developers can use to retrieve information about a post’s featured image, such as the caption or description.
+Exposes two new functions theme developers can use to retrieve information about a post's featured image, such as the caption or description.
 
 == Description ==
 
-Thumbnail Field’s purpose is simple and straightforward: It creates two new functions, `the_thumbnail_field()` and `get_thumbnail_field()`, to facilitate retrieving information from a post's featured image, such as the title, alt, description, or caption. Theme and plugin developers are welcome to strip these functions out of this plugin and use them directly in their work, or require this plugin.
+Thumbnail Field's purpose is simple and straightforward: It creates two new functions, `the_thumbnail_field()` and `get_thumbnail_field()`, to facilitate retrieving information from a post's featured image, such as the title, alt, description, or caption. Theme and plugin developers are welcome to strip these functions out of this plugin and use them directly in their work, or require this plugin.
 
 In keeping with WordPress style, `the_thumbnail_field()` echoes the field value, whereas `get_thumbnail_field()` merely returns it.
 
@@ -23,7 +23,7 @@ Both functions take up to three arguments, all of which are optional:
 
 Thus, outputting the description for the featured image of post ID 45 would look like this:
 
-`the_thumbnail_field( 'description', 45 );`
+`<?php the_thumbnail_field( 'description', 45 ); ?>`
 
 Installing this plugin will make no visible changes to your WordPress admin.
 

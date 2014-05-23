@@ -2,7 +2,7 @@
 /*
 Plugin Name: Thumbnail Field
 Plugin URI: http://cornershopcreative.com/code/thumbnail-field
-Description: Creates two new functions, <code>the_thumbnail_field()</code> and <code>get_thumbnail_field()</code>, to facilitate retrieving field information from a post's featured image
+Description: Exposes two new functions theme developers can use to retrieve information about a post's featured image, such as the caption or description.
 Version: 1.0.0
 Author: drywallbmb
 Author URI: http://cornershopcreative.com
@@ -34,21 +34,21 @@ function get_thumbnail_field( $field = 'caption', $post_id = NULL, $suppress_fil
 	if ( $attachment_id ) {
 
 		$data = wp_prepare_attachment_for_js( $attachment_id );
-		
+
 		// We're getting a non-standard field
 		if ( !array_key_exists($field, $data) ) {
 			$meta = get_post_meta( $data['id'], $field );
 			if ( !count($meta) ) return NULL; // field wasn't found
 			$field = ( count($meta) == 1 ) ? maybe_unserialize( $meta ) : $meta ;
 		}
-		
+
 		$field = $data[$field];
 
 		if ( $suppress_filters || !is_string($field) ) return $field;
 
 		return apply_filters('get_thumbnail_field', $field);
 	}
-	
+
 	return NULL;
 }
 
@@ -56,7 +56,7 @@ function get_thumbnail_field( $field = 'caption', $post_id = NULL, $suppress_fil
 /**
  * Echoes the value of a post thumbnail field. May not produce expected output if field value isn't a string.
  *
- * @see get_thumbnail_field() for parameters. Only difference is that this echoes the reult. 
+ * @see get_thumbnail_field() for parameters. Only difference is that this echoes the reult.
  *
  * @since 1.0.0
  */
