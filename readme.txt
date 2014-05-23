@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Exposes two new functions theme developers can use to facilitate retrieving field information from a post's featured image
+Exposes two new functions theme developers can use to facilitate retrieving information from a post's featured image, such as the caption or description.
 
 == Description ==
 
@@ -19,7 +19,9 @@ Both functions take up to three arguments, all of which are optional:
 
 *   $field is the name of the field to retrieve. Defaults to 'caption'. Custom meta fields **are** supported.
 *   $post_id is an integer specifying the ID of the post to retrieve featured image information for. Defaults to current $post
-*   $suppress_filters is a TRUE or FALSE value indicating whether to run the returned field through get_thumbnail_field filters that might be defined somewhere. Defaults to true. Note that this plugin provides this fulter hook as a courtesy but does not use it; out of the box this setting will therefore have no effect.
+*   $suppress_filters is a TRUE or FALSE value indicating whether to run the returned field through get_thumbnail_field filters that might be defined somewhere. Defaults to true. Note that this plugin provides this filter hook as a courtesy but does not use it; out of the box this setting will therefore have no effect.
+
+Installing this plugin will make no visible changes to your WordPress admin.
 
 == Installation ==
 
@@ -68,4 +70,4 @@ Mostly this plugin assumes fields will have single, textual values. But you may 
 == Changelog ==
 
 = 1.0 =
-Initial release, includes got the_ and get_ versions of functions and support for meta fields. 
+Initial release, includes got the_ and get_ versions of functions and support for meta fields.
