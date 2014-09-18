@@ -73,7 +73,7 @@ Mostly this plugin assumes fields will have single, textual values. But you may 
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.3 =
 Changing authorship credit and implementing plugin icon for WP >= 4.0
 
 = 1.0 =
