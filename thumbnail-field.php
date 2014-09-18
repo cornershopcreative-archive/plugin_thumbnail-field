@@ -3,8 +3,8 @@
 Plugin Name: Thumbnail Field
 Plugin URI: http://cornershopcreative.com/code/thumbnail-field
 Description: Exposes two new functions theme developers can use to retrieve information about a post's featured image, such as the caption or description.
-Version: 1.0.1
-Author: drywallbmb
+Version: 1.0.3
+Author: Cornershop Creative
 Author URI: http://cornershopcreative.com
 License: GPLv2 or later
 */

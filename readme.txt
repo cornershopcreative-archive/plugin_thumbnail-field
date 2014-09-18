@@ -2,7 +2,7 @@
 Contributors: drywallbmb
 Tags: thumbnail, featured image, field
 Requires at least: 3.5.0
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -72,6 +72,9 @@ Mostly this plugin assumes fields will have single, textual values. But you may 
 
 
 == Changelog ==
+
+= 1.0.2 =
+Changing authorship credit and implementing plugin icon for WP >= 4.0
 
 = 1.0 =
 Initial release, includes got the_ and get_ versions of functions and support for meta fields.
